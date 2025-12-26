@@ -84,6 +84,8 @@ switch (string lower $TERM_PROGRAM)
         set_term_var TERM_CURRENT_SHELL "fish $FISH_VERSION"
     case vscode
         source (code --locate-shell-integration-path fish)
+    case warpterminal
+        set_term_var TERM_CURRENT_SHELL "fish $FISH_VERSION"
 end
 
 #
